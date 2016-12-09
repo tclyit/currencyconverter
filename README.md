@@ -43,6 +43,4 @@ Setup:
    
  Demo:
  
- https://tclyit.github.io
- 
- [Demo](https://tclyit.github.io){:target="_blank"}
+ [Click here](https://tclyit.github.io)
