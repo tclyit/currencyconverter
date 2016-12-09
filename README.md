@@ -23,7 +23,7 @@ Terminal Commands:
 
 TO DO next:
 - Add more currency rate option
-- Imporove responsive widget
+- Improve responsive widget
 - Implement HTML template using AEM Sightly/HTL (use mock references to a Sling model and i18n labels)
 - Improving performance and load
 - Test for data, REST API and Angular 2 components
