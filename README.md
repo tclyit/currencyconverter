@@ -43,4 +43,4 @@ Setup:
    
  Demo:
  
- [Click here](https://tclyit.github.io)
+ [Click here](https://tclyit.github.io/currencyconverter)
