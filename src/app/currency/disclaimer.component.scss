@@ -1,0 +1,11 @@
+@import '../styles/variables';
+@import '../styles/globals';
+
+.disclaimer-rate {
+    font-family: $fontfamily;
+
+    p,
+    ol > li {
+        color: $textcolor;
+    }
+}

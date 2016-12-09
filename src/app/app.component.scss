@@ -1,0 +1,11 @@
+@import 'styles/variables';
+@import 'styles/globals';
+
+.app {
+  padding: 1em;
+  font-family: $fontfamily;
+}
+
+nav {
+  font-family: $fontfamily;
+}

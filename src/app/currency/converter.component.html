@@ -1,0 +1,51 @@
+<div class="currency">
+    <form [formGroup]="rateForm" novalidate>
+        <div class="container">
+            <p>Currency converter</p>
+            <div class="content-row">
+                <div class="item-cell">
+                    <p>Type in amount and select currency:</p>
+                </div>
+            </div>
+            <div class="content-row">
+                <div class="item-cell currency-number">
+                    <input type="text" class="input-text" placeholder="0.00" formControlName="fromValue" (blur)="exchangeRage(rateForm.valid)" />
+                    <div class="errors" *ngIf="rateForm.controls.fromValue.errors">
+                        <span *ngIf="rateForm.controls.fromValue.errors?.required">
+                            This is required field.
+                        </span>
+                        <span *ngIf="rateForm.controls.fromValue.errors?.invalidNumber">
+                            Number must greater than zero / format 1 or 1.23.
+                        </span>
+                    </div>
+                </div>
+                <div class="item-cell">
+                    <select class="select-item" formControlName="fromName" [(ngModel)]="rate.fromName" (change)="exchangeRage(rateForm.valid)">
+                        <option *ngFor="let name of symbols" [ngValue]="name">{{name}}</option>
+                    </select>
+                </div>
+            </div>
+            <div class="content-row">
+                <div class="item-cell">
+                    <p>Converted amount:</p>
+                </div>
+            </div>
+            <div class="content-row">
+                <div class="item-cell">
+                    <input type="text" class="input-text" placeholder="0.00" formControlName="toValue" [(ngModel)]="rate.toValue" readonly />
+                </div>
+                <div class="item-cell">
+                    <select class="select-item" formControlName="toName" [(ngModel)]="rate.toName" (change)="exchangeRage(rateForm.valid)">
+                        <option *ngFor="let name of symbols" [ngValue]="name">{{name}}</option>
+                    </select>
+                </div>
+            </div>
+            <div class="content-row">
+                <div class="item-cell"><p></p></div>
+                <div class="item-cell link">
+                    <a routerLink="/disclaimer" class="link disclaimer">Disclaimer</a>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
