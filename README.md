@@ -7,9 +7,10 @@ What inside this README:
 2. Terminal Commands
 3. TO DO next 
 4. Setup
+5. Demo
 
 Description:
-This small project is about currency converter based on API rate source on Fixer.io.
+This small project is about currency converter based on API rate source on `Fixer.io`.
 - Uses Angular 2
 - Build system setup with Webpack
 - This app converts currency from 'CAD, USD, EUR' to 'CAD, USD, EUR' rate
@@ -22,6 +23,7 @@ Terminal Commands:
 
 TO DO next:
 - Add more currency rate option
+- Imporove responsive widget
 - Implement HTML template using AEM Sightly/HTL (use mock references to a Sling model and i18n labels)
 - Improving performance and load
 - Test for data, REST API and Angular 2 components
@@ -38,3 +40,7 @@ Setup:
    - You can run `npm run build` commands and wait for everything successfully deployed. It will create a folder name `dist` inside the project folder.
    
    - To test with XAMPP, copy `dist` folder into `C:\xampp\htdocs` (or any path you use XAMPP) folder and rename `dist` folder to `currencyconverter` and that is it. It is time to test currency converter.
+   
+ Demo:
+ 
+ https://tclyit.github.io/
