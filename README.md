@@ -40,7 +40,6 @@ Setup:
    - You can run `npm run build` commands and wait for everything successfully deployed. It will create a folder name `dist` inside the project folder.
    
    - To test with XAMPP, copy `dist` folder into `C:\xampp\htdocs` (or any path you use XAMPP) folder and rename `dist` folder to `currencyconverter` and that is it. It is time to test currency converter.
-   
- Demo:
- 
+
+Demo:
  [Click here](https://tclyit.github.io/currencyconverter)
