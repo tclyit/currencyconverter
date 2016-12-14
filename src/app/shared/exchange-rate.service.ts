@@ -5,6 +5,9 @@ import 'rxjs';
 import { Observable } from 'rxjs/Observable';
 import { CONFIG } from './setting';
 
+/**
+* Create interface for the model
+*/
 export interface IRate {
     fromValue: number;
     toValue: number;
@@ -34,7 +37,7 @@ export class ExchangeRateApi {
 
     /**
     * To avoid calling REST service each time user convert currency
-    * then this REST api can handle it by grapping all rating currency value
+    * then this REST api can handled it by grapping all rating currency value
     */
     getAllExchangeRate() {
         return this.http.get(`${this.baseUrl}`)
