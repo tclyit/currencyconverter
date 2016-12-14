@@ -93,7 +93,7 @@ export class CurrencyConverter implements OnInit {
   * to modify up on rules
   * @param {number} fromValue - value number to convert to
   * @param {string} toName - the base currency name which need to convert to 
-  * @param {string} toName - the base currency name which need to convert to 
+  * @param {string} toName - the converted currency name
   */
   calculateRate(fromValue: number, toName: string, resultRate: any) {
     let d: any = resultRate.rates;
